@@ -9,8 +9,8 @@ function MenuItems(props) {
 
     return (
             <li>
-                <NavLink exact={exact} className="menu-items" to={to}>
-                    <div className="menu-item-icon">
+                <NavLink exact={exact} className="menu-item" activeClassName="selected-menu" to={to}>
+                    <div className="menu-icon">
                         {icon}
                     </div>
                     <span>{name}</span>

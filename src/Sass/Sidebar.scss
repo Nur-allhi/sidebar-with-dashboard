@@ -1,14 +1,13 @@
 @import "colour";
 
 .sidebar-container {
+  border: 3px solid gray;
   position: fixed;
   box-sizing: border-box;
   width: 300px;
   background: $Colour-sidebar-bg;
   height: 100%;
-  padding: 30px 20px;
-  // border-bottom-right-radius: 20px;
-  // border-top-right-radius: 20px;
+  padding: 20px 20px;
 
   .top-section {
     position: relative;
@@ -28,7 +27,6 @@
       top: 13%;
       right: 20px;
       cursor: pointer;
-      // transform: translateY(-16%);
 
       p {
         font-size: 25px;
@@ -47,8 +45,60 @@
   }
 
   .main-menu {
+    top: 10%;
     position: relative;
-    left: 20px;
     margin-top: 25px;
+    width: 220px;
+    box-sizing: border-box;
+    padding: 5px;
+  }
+  .user-section {
+    position: absolute;
+    bottom: 20px;
+    width: 250px;
+
+    .user-image {
+      height: 40px;
+      width: 40px;
+      overflow: hidden;
+      display: inline-block;
+      background: #fff;
+      border-radius: 50%;
+
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    .user-info {
+      display: inline-block;
+      color: $Colour-Menu-item-text;
+      position: absolute;
+      margin: 0 10px;
+      h5 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+    .sign-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px 0;
+
+      button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 110px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 5px;
+        outline: none;
+        border: 0;
+        padding: 5px;
+      }
+    }
   }
 }

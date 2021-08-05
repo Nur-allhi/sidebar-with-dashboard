@@ -1,26 +1,46 @@
-.menu-items {
+.menu-item {
+  display: block;
   text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
+  margin-bottom: 10px;
   font-weight: 600;
   cursor: pointer;
 }
 
-.menu-items .menu-item-icon {
-  width: 40px;
+.menu-item .menu-icon {
+  margin-right: 5px;
+  margin-top: 7px;
+  display: inline-block;
+  width: 50px;
   height: 40px;
   color: #fff;
-  font-size: 30px;
-  display: inline-block;
+  font-size: 20px;
   line-height: 40px;
-  padding-right: 10px;
   text-align: center;
+  -webkit-transition: font-size 0.3s ease-out;
+  transition: font-size 0.3s ease-out;
 }
 
-.menu-items span {
+.menu-item span {
+  padding-top: 5px;
+  font-size: 18px;
+  display: inline;
   position: absolute;
-  display: inline-block;
-  line-height: 30px;
-  position: absolute;
+  line-height: 40px;
   color: #628395;
+  -webkit-transition: font-size 0.3s ease-out;
+  transition: font-size 0.3s ease-out;
+}
+
+.selected-menu {
+  background: #e41714;
+  border-radius: 5px;
+}
+
+.selected-menu .menu-icon {
+  font-size: 25px;
+}
+
+.selected-menu span {
+  color: #fff;
+  font-size: 20px;
 }

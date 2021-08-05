@@ -1,28 +1,44 @@
 @import "colour";
 
-.menu-items {
+.menu-item {
+  display: block;
   text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
+  margin-bottom: 10px;
   font-weight: 600;
   cursor: pointer;
 
-  .menu-item-icon {
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    font-size: 30px;
+  .menu-icon {
+    margin-right: 5px;
+    margin-top: 7px;
     display: inline-block;
+    width: 50px;
+    height: 40px;
+    color: $Colour-menu-icon;
+    font-size: 20px;
     line-height: 40px;
-    padding-right: 10px;
     text-align: center;
+    transition: font-size 0.3s ease-out;
   }
 
   span {
+    padding-top: 5px;
+    font-size: 18px;
+    display: inline;
     position: absolute;
-    display: inline-block;
-    line-height: 30px;
-    position: absolute;
+    line-height: 40px;
     color: $Colour-Menu-item-text;
+    transition: font-size 0.3s ease-out;
+  }
+}
+.selected-menu {
+  background: rgb(228, 23, 20);
+  border-radius: 5px;
+
+  .menu-icon {
+    font-size: 25px;
+  }
+  span {
+    color: $Colour-Active-Menu-item-text;
+    font-size: 20px;
   }
 }

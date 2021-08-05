@@ -1,8 +1,11 @@
 import React from 'react';
 import { BiCollection } from 'react-icons/bi';
 import { CgComponents } from 'react-icons/cg';
+import { FaSignInAlt } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 import { RiAdminFill, RiDashboardFill } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
+import userIcon from '../../assets/user.png';
 import "../../Css/Sidebar.css";
 import MenuItems from './MenuItems';
 
@@ -29,7 +32,7 @@ function Sidebar() {
             <div className="main-menu">
                 <ul>
                     {
-                        menuItems.map(( menuItem,index) => (
+                        menuItems.map((menuItem, index) => (
                             <MenuItems
                                 key={index}
                                 name={menuItem.name}
@@ -40,6 +43,19 @@ function Sidebar() {
                         ))
                     }
                 </ul>
+            </div>
+            <div className="user-section">
+                <div className="user-image">
+                    <img src={userIcon} alt="UserImage" />
+                </div>
+                <div className="user-info">
+                    <h5>Nur E Allhi</h5>
+                    <p>Example@gmail.com</p>
+                </div>
+                <div className="sign-buttons">
+                    <button ><FaSignInAlt/>Sign in</button>
+                    <button><FcGoogle/>Google</button>
+                </div>
             </div>
         </div>
     )
