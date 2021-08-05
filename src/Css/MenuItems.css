@@ -1,0 +1,26 @@
+.menu-items {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.menu-items .menu-item-icon {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 40px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.menu-items span {
+  position: absolute;
+  display: inline-block;
+  line-height: 30px;
+  position: absolute;
+  color: #628395;
+}

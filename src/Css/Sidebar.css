@@ -1,6 +1,51 @@
 .sidebar-container {
   position: fixed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 300px;
-  background: #000;
+  background: #082032;
   height: 100%;
+  padding: 30px 20px;
+}
+
+.sidebar-container .top-section {
+  position: relative;
+}
+
+.sidebar-container .top-section .logo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.sidebar-container .top-section .logo img {
+  max-width: 100%;
+}
+
+.sidebar-container .top-section .company-name {
+  position: absolute;
+  top: 13%;
+  right: 20px;
+  cursor: pointer;
+}
+
+.sidebar-container .top-section .company-name p {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.sidebar-container .top-section .devider {
+  margin-top: 20px;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background: #2c394b;
+}
+
+.sidebar-container .main-menu {
+  position: relative;
+  left: 20px;
+  margin-top: 25px;
 }

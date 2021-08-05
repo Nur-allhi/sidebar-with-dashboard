@@ -1,0 +1,54 @@
+@import "colour";
+
+.sidebar-container {
+  position: fixed;
+  box-sizing: border-box;
+  width: 300px;
+  background: $Colour-sidebar-bg;
+  height: 100%;
+  padding: 30px 20px;
+  // border-bottom-right-radius: 20px;
+  // border-top-right-radius: 20px;
+
+  .top-section {
+    position: relative;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+    }
+    .company-name {
+      position: absolute;
+      top: 13%;
+      right: 20px;
+      cursor: pointer;
+      // transform: translateY(-16%);
+
+      p {
+        font-size: 25px;
+        color: $Colour-Company-name;
+        font-weight: 600;
+      }
+    }
+
+    .devider {
+      margin-top: 20px;
+      width: 100%;
+      height: 5px;
+      border-radius: 10px;
+      background: #2c394b;
+    }
+  }
+
+  .main-menu {
+    position: relative;
+    left: 20px;
+    margin-top: 25px;
+  }
+}
