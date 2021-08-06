@@ -4,6 +4,7 @@ import AdminAdd from '../Components/AddAdmin/AdminAdd';
 import "../Css/Routes.css";
 import ServicesAdd from './../Components/AddServices/ServicesAdd';
 import Dashboard from './../Components/Dashboard/Dashboard';
+import Login from './../Components/Login/Login';
 import OrderMaintain from './../Components/OrderMaintain/OrderMaintain';
 
 function Routes() {
@@ -22,6 +23,10 @@ function Routes() {
                 </Route>
                 <Route exact path="/maintainOrder">
                     <OrderMaintain />
+                </Route>
+
+                <Route exact path="/login">
+                    <Login />
                 </Route>
 
             </Switch>

@@ -13,7 +13,7 @@
     display: inline-block;
     width: 50px;
     height: 40px;
-    color: $Colour-menu-icon;
+    color: $menu-icon;
     font-size: 20px;
     line-height: 40px;
     text-align: center;
@@ -26,7 +26,7 @@
     display: inline;
     position: absolute;
     line-height: 40px;
-    color: $Colour-Menu-item-text;
+    color: $Menu-item-text;
     transition: font-size 0.3s ease-out;
   }
 }
@@ -40,7 +40,7 @@
     font-size: 25px;
   }
   span {
-    color: $Colour-Active-Menu-item-text;
+    color: $Active-Menu-item-text;
     font-size: 20px;
   }
 }

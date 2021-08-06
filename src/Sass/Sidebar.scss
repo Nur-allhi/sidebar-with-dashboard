@@ -1,11 +1,10 @@
 @import "colour";
 
 .sidebar-container {
-  // border: 3px solid gray;
   position: fixed;
   box-sizing: border-box;
   width: 300px;
-  background: $Colour-sidebar-bg;
+  background: $sidebar-bg;
   height: 100%;
   padding: 20px 20px;
 
@@ -30,7 +29,7 @@
 
       p {
         font-size: 25px;
-        color: $Colour-Company-name;
+        color: $Company-name;
         font-weight: 600;
       }
     }
@@ -40,31 +39,54 @@
       width: 100%;
       height: 5px;
       border-radius: 10px;
-      background: #2c394b;
+      background: $devider-bg;
     }
   }
   .login-section {
-    // margin-top: 3.12em;
     position: absolute;
     bottom: 15%;
+    text-decoration: none;
     button {
-      width: 11.5em;
-      height: 2em;
-      // border-radius: 0.5em;
-      border-bottom-right-radius: 2em;
-      border-top-right-radius: 2em;
-      outline: none;
-      border: 0;
-      font-size: 1.2em;
-      font-weight: 500;
-      letter-spacing: 5px;
-      color: #ffe6e6;
-      background: #055052;
+      width: 12em;
+      box-sizing: border-box;
+      appearance: none;
+      border: 0.5px solid rgb(54, 51, 51);
+      border-radius: 0.6em;
+      color: $Menu-item-text;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1;
+      padding: 0.5em 2em;
+      text-transform: uppercase;
+      background-color: transparent;
+      transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 
-      &:hover {
-        background: #09a3a8;
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 40px 40px $loginbtn-hover-bg inset;
+        border: 0.5px solid rgb(224, 209, 209);
+        color: #f3f2c9;
+        outline: 0;
       }
     }
+    // button {
+    //   width: 11.5em;
+    //   height: 2em;
+    //   border-bottom-right-radius: 2em;
+    //   border-top-right-radius: 2em;
+    //   border: 0;
+    //   font-size: 1.2em;
+    //   font-weight: 500;
+    //   letter-spacing: 5px;
+    //   color: $loginbtn-text;
+    //   background: $loginbtn-bg;
+
+    //   &:hover {
+    //     // background: $loginbtn-hover-bg;
+    //     background: darken($color: $loginbtn-bg, $amount: 7%);
+    //   }
+    // }
   }
   .main-menu {
     display: block;
@@ -87,7 +109,7 @@
       width: 40px;
       overflow: hidden;
       display: inline-block;
-      background: #fff;
+      background: $user-img-bg;
       border-radius: 50%;
 
       img {
@@ -97,7 +119,7 @@
     }
     .user-info {
       display: inline-block;
-      color: $Colour-Menu-item-text;
+      color: $Menu-item-text;
       position: absolute;
       margin: 0 10px;
       h5 {

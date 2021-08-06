@@ -2,6 +2,7 @@ import React from 'react';
 import { BiCollection } from 'react-icons/bi';
 import { CgComponents } from 'react-icons/cg';
 import { RiAdminFill, RiDashboardFill } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import userIcon from '../../assets/user.png';
 import "../../Css/Sidebar.css";
@@ -43,7 +44,9 @@ function Sidebar() {
                 </ul>
             </div>
             <div className="login-section">
+                <Link to="/login">
                 <button>Login</button>
+                </Link>
             </div>
             <div className="user-section">
                 <div className="user-image">

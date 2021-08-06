@@ -15,3 +15,7 @@
 > Changelog V- 0.3:
 
 - Side-bar completed.
+
+> Changelog V- 0.4:
+
+- Login button designed.
