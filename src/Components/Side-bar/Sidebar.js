@@ -1,8 +1,6 @@
 import React from 'react';
 import { BiCollection } from 'react-icons/bi';
 import { CgComponents } from 'react-icons/cg';
-import { FaSignInAlt } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc';
 import { RiAdminFill, RiDashboardFill } from 'react-icons/ri';
 import logo from '../../assets/logo.png';
 import userIcon from '../../assets/user.png';
@@ -28,7 +26,7 @@ function Sidebar() {
                 </div>
                 <div className="devider"></div>
             </div>
-
+            
             <div className="main-menu">
                 <ul>
                     {
@@ -44,6 +42,9 @@ function Sidebar() {
                     }
                 </ul>
             </div>
+            <div className="login-section">
+                <button>Login</button>
+            </div>
             <div className="user-section">
                 <div className="user-image">
                     <img src={userIcon} alt="UserImage" />
@@ -51,10 +52,6 @@ function Sidebar() {
                 <div className="user-info">
                     <h5>Nur E Allhi</h5>
                     <p>Example@gmail.com</p>
-                </div>
-                <div className="sign-buttons">
-                    <button ><FaSignInAlt/>Sign in</button>
-                    <button><FcGoogle/>Google</button>
                 </div>
             </div>
         </div>

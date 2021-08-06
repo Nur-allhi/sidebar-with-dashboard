@@ -33,7 +33,8 @@
 
 .selected-menu {
   background: #e41714;
-  border-radius: 5px;
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 .selected-menu .menu-icon {

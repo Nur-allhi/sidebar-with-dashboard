@@ -11,3 +11,7 @@
 - User section added.
 - sign in button added.
 - alignment fixed.
+
+> Changelog V- 0.3:
+
+- Side-bar completed.

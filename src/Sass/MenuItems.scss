@@ -32,7 +32,9 @@
 }
 .selected-menu {
   background: rgb(228, 23, 20);
-  border-radius: 5px;
+  // border-radius: 5px;
+  border-bottom-right-radius: 2em;
+  border-top-right-radius: 2em;
 
   .menu-icon {
     font-size: 25px;
