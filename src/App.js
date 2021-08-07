@@ -1,21 +1,27 @@
+import { createContext, useState } from "react";
 import {
   BrowserRouter as Router
 } from "react-router-dom";
 import './App.css';
-import Sidebar from './Components/Side-bar/Sidebar';
-import Routes from "./Routes/Routes";
+import Pages from './Pages/Pages';
+import SidebarRoutes from "./Routes/SidebarRoutes";
 
-
+export const UserStates = createContext()
 
 function App() {
+  const [modalOpen, setModalOpen] = useState(false)
+  console.log("🚀 ~ file: App.js ~ line 13 ~ App ~ modalOpen", modalOpen)
+
+
   return (
-    <div className="App">
+    <UserStates.Provider value={{ ModalState: { modalOpen, setModalOpen } }} className="App">
+
       <Router>
-        <Sidebar />
-        <Routes></Routes>
+        <Pages></Pages>
+        <SidebarRoutes></SidebarRoutes>
       </Router>
 
-    </div>
+    </UserStates.Provider>
   );
 }
 

@@ -19,3 +19,9 @@
 > Changelog V- 0.4:
 
 - Login button designed.
+
+> Changelog V- 0.5:
+
+- Context api used for state nesting.
+- pages component use for better code understading.
+- Code refectored.

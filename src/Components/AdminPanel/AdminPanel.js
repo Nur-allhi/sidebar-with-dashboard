@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BiCollection } from 'react-icons/bi';
 import { CgComponents } from 'react-icons/cg';
 import { RiAdminFill, RiDashboardFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
+import { UserStates } from '../../App';
 import logo from '../../assets/logo.png';
 import userIcon from '../../assets/user.png';
 import "../../Css/Sidebar.css";
@@ -15,7 +16,12 @@ const menuItems = [
     { name: "Maintain-Order", to: "/maintainOrder", exact: true, icon: <BiCollection /> }
 ]
 
-function Sidebar() {
+function AdminPanel() {
+
+    const { ModalState } = useContext(UserStates)
+    const { setModalOpen } = ModalState
+
+
     return (
         <div className="sidebar-container">
             <div className="top-section">
@@ -27,7 +33,7 @@ function Sidebar() {
                 </div>
                 <div className="devider"></div>
             </div>
-            
+
             <div className="main-menu">
                 <ul>
                     {
@@ -45,7 +51,7 @@ function Sidebar() {
             </div>
             <div className="login-section">
                 <Link to="/login">
-                <button>Login</button>
+                    <button onClick={() => setModalOpen(true)}>Login</button>
                 </Link>
             </div>
             <div className="user-section">
@@ -61,4 +67,4 @@ function Sidebar() {
     )
 }
 
-export default Sidebar
+export default AdminPanel

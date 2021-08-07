@@ -1,13 +1,13 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import AdminAdd from '../Components/AddAdmin/AdminAdd';
+import ServicesAdd from '../Components/AddServices/ServicesAdd';
+import Dashboard from '../Components/Dashboard/Dashboard';
+import Login from '../Components/Login/Login';
+import OrderMaintain from '../Components/OrderMaintain/OrderMaintain';
 import "../Css/Routes.css";
-import ServicesAdd from './../Components/AddServices/ServicesAdd';
-import Dashboard from './../Components/Dashboard/Dashboard';
-import Login from './../Components/Login/Login';
-import OrderMaintain from './../Components/OrderMaintain/OrderMaintain';
 
-function Routes() {
+function SidebarRoutes() {
     return (
 
         <div className="content-container">
@@ -35,4 +35,4 @@ function Routes() {
     )
 }
 
-export default Routes
+export default SidebarRoutes
