@@ -1,0 +1,58 @@
+.LoginForm-Container {
+  border: none;
+  border-radius: 1em;
+  width: 30em;
+  height: 100%;
+  padding: 2em 3em;
+  box-sizing: border-box;
+  text-align: center;
+  background: rgb(239, 235, 242);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 235, 242, 1) 0%,
+    rgba(243, 239, 245, 1) 100%
+  );
+
+  .heading {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  form {
+    border-radius: 1em;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1em 0.5em;
+    margin-top: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    input {
+      margin-bottom: 0.8em;
+      width: 22em;
+      height: 3em;
+      border: 1px solid white;
+      border-radius: 0.5em;
+      outline: none;
+      box-sizing: border-box;
+      padding: 0 0.7em;
+      font-weight: 600;
+    }
+
+    .blankInputAlert {
+      border: 1px solid gray;
+      color: red;
+    }
+
+    button {
+      width: 5em;
+      height: 2.5em;
+      font-size: 1em;
+      color: #fff;
+      border: 0;
+      border-radius: 0.5em;
+      background: #16c79a;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+  }
+}

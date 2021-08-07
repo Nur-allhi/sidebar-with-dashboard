@@ -1,0 +1,59 @@
+.LoginForm-Container {
+  border: none;
+  border-radius: 1em;
+  width: 30em;
+  height: 100%;
+  padding: 2em 3em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  background: #efebf2;
+  background: -webkit-gradient(linear, left top, right top, from(#efebf2), to(#f3eff5));
+  background: linear-gradient(90deg, #efebf2 0%, #f3eff5 100%);
+}
+
+.LoginForm-Container .heading {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.LoginForm-Container form {
+  border-radius: 1em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1em 0.5em;
+  margin-top: 1em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.LoginForm-Container form input {
+  margin-bottom: 0.8em;
+  width: 22em;
+  height: 3em;
+  border: 1px solid white;
+  border-radius: 0.5em;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0.7em;
+  font-weight: 600;
+}
+
+.LoginForm-Container form .blankInputAlert {
+  border: 1px solid gray;
+  color: red;
+}
+
+.LoginForm-Container form button {
+  width: 5em;
+  height: 2.5em;
+  font-size: 1em;
+  color: #fff;
+  border: 0;
+  border-radius: 0.5em;
+  background: #16c79a;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

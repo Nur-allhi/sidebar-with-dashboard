@@ -1,16 +1,39 @@
-import React, { useContext } from 'react'
-import { UserStates } from '../../App'
+import React, { useContext } from 'react';
+import { useForm } from "react-hook-form";
+import { UserStates } from '../../App';
+import "../../Css/Login.css";
 
 function Login() {
-    const { ModalState } = useContext(UserStates)
-    const { modalOpen, setModalOpen } = ModalState
+    const { UserLogin } = useContext(UserStates)
+    const { LoggedIn, seLoggedIn } = UserLogin
 
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
+    const onSubmit = data => {
+        console.log(data)
+    };
 
     return (
-        <div>
-            <h1 style={{ textAlign: "center" }}>Login here</h1>
-            <button onClick={() => setModalOpen(false)}>Modal toggle</button>
+
+        <div className="LoginForm-Container">
+            <span className="heading">Join with use for more exciting feature</span>
+            {/* <p>Hello Again</p> */}
+
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <input type="text" placeholder="Enter username" {...register("userName", { required: true })} />
+
+                <br />{errors.password && <span className="blankInputAlert">Username de da bhai</span>} <br />
+
+                <input type="password" placeholder="Password" {...register("password", { required: true })} />
+
+                <br /> {errors.password && <span className="blankInputAlert">Password de da bhai</span>} <br />
+
+
+
+
+                <button type="submit">Login</button>
+            </form>
+
         </div>
     )
 }

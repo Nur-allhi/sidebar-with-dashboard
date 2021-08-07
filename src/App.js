@@ -9,12 +9,11 @@ import SidebarRoutes from "./Routes/SidebarRoutes";
 export const UserStates = createContext()
 
 function App() {
-  const [modalOpen, setModalOpen] = useState(false)
-  console.log("🚀 ~ file: App.js ~ line 13 ~ App ~ modalOpen", modalOpen)
+  const [LoggedIn, seLoggedIn] = useState(false)
 
 
   return (
-    <UserStates.Provider value={{ ModalState: { modalOpen, setModalOpen } }} className="App">
+    <UserStates.Provider value={{ UserLogin: { LoggedIn, seLoggedIn } }} className="App">
 
       <Router>
         <Pages></Pages>

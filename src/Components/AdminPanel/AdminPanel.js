@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { BiCollection } from 'react-icons/bi';
 import { CgComponents } from 'react-icons/cg';
 import { RiAdminFill, RiDashboardFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-import { UserStates } from '../../App';
 import logo from '../../assets/logo.png';
 import userIcon from '../../assets/user.png';
-import "../../Css/Sidebar.css";
+import "../../Css/AdminPanel.css";
 import MenuItems from './MenuItems';
 
 const menuItems = [
@@ -17,9 +16,6 @@ const menuItems = [
 ]
 
 function AdminPanel() {
-
-    const { ModalState } = useContext(UserStates)
-    const { setModalOpen } = ModalState
 
 
     return (
@@ -51,7 +47,7 @@ function AdminPanel() {
             </div>
             <div className="login-section">
                 <Link to="/login">
-                    <button onClick={() => setModalOpen(true)}>Login</button>
+                    <button >Login</button>
                 </Link>
             </div>
             <div className="user-section">

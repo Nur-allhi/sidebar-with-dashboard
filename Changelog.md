@@ -25,3 +25,8 @@
 - Context api used for state nesting.
 - pages component use for better code understading.
 - Code refectored.
+
+> Changelog V- 0.6:
+
+- Login form added.
+- React-hook-form added for login parpous.
