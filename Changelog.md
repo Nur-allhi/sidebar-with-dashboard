@@ -30,3 +30,7 @@
 
 - Login form added.
 - React-hook-form added for login parpous.
+
+> Changelog V- 0.7:
+
+- Login form created.

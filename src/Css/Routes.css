@@ -4,3 +4,8 @@
           box-sizing: border-box;
   padding: 30px 20px;
 }
+
+.content-container .content {
+  margin: auto;
+  width: 50%;
+}

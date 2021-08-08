@@ -1,4 +1,14 @@
-.LoginForm-Container {
+.Form-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: none;
   border-radius: 1em;
   width: 30em;
@@ -6,18 +16,18 @@
   padding: 2em 3em;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  text-align: center;
   background: #efebf2;
   background: -webkit-gradient(linear, left top, right top, from(#efebf2), to(#f3eff5));
   background: linear-gradient(90deg, #efebf2 0%, #f3eff5 100%);
 }
 
-.LoginForm-Container .heading {
+.Form-Container .heading {
   font-size: 2em;
   font-weight: 600;
+  text-align: center;
 }
 
-.LoginForm-Container form {
+.Form-Container form {
   border-radius: 1em;
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -28,8 +38,8 @@
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.LoginForm-Container form input {
-  margin-bottom: 0.8em;
+.Form-Container form input {
+  margin: 0.5em 0.8em;
   width: 22em;
   height: 3em;
   border: 1px solid white;
@@ -39,21 +49,129 @@
           box-sizing: border-box;
   padding: 0 0.7em;
   font-weight: 600;
+  -webkit-box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+          box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
-.LoginForm-Container form .blankInputAlert {
-  border: 1px solid gray;
-  color: red;
+.Form-Container form .blankInputAlert {
+  color: #ff0404;
+  -webkit-animation: blinkingText 1.2s infinite;
+          animation: blinkingText 1.2s infinite;
 }
 
-.LoginForm-Container form button {
-  width: 5em;
-  height: 2.5em;
+@-webkit-keyframes blinkingText {
+  0% {
+    color: #ff0404;
+  }
+  49% {
+    color: #ff0404;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #ff0404;
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    color: #ff0404;
+  }
+  49% {
+    color: #ff0404;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: #ff0404;
+  }
+}
+
+.Form-Container form .forget-pass {
+  color: gray;
+  text-decoration: none;
+  text-align: start;
+}
+
+.Form-Container form button[type="submit"] {
+  margin-top: 0.7em;
+  padding: 0.75rem 1.5rem;
   font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 600;
   color: #fff;
-  border: 0;
+  border: 1px solid white;
   border-radius: 0.5em;
-  background: #16c79a;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  background-color: #ff4848;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  -webkit-transition: letter-spacing 0.2s ease-in;
+  transition: letter-spacing 0.2s ease-in;
+}
+
+.Form-Container form button[type="submit"]:hover {
+  letter-spacing: 0.2em;
+}
+
+.Form-Container .other-signin-heading {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+.Form-Container .other-signin-option {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Form-Container .other-signin-option div {
+  width: 40px;
+  height: 40px;
+  padding: 0.7em 0.8em;
+  margin: 0 1em;
+  background-color: #eeeeee;
+  border-radius: 1em;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+.Form-Container .other-signin-option div img {
+  width: 100%;
+  height: 100%;
+}
+
+.Form-Container .other-signin-option div:hover {
+  background-color: #fff;
+}
+
+.Form-Container .create-newacc {
+  margin-top: 1em;
+}
+
+.Form-Container .create-newacc span {
+  font-size: 1rem;
+}
+
+.Form-Container .create-newacc span button {
+  font-size: 1.1rem;
+  border: 0;
+  text-decoration: underline;
+  color: #0e43d3;
 }

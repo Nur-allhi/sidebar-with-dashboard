@@ -1,11 +1,13 @@
-.LoginForm-Container {
+.Form-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: none;
   border-radius: 1em;
   width: 30em;
   height: 100%;
   padding: 2em 3em;
   box-sizing: border-box;
-  text-align: center;
   background: rgb(239, 235, 242);
   background: linear-gradient(
     90deg,
@@ -16,6 +18,7 @@
   .heading {
     font-size: 2em;
     font-weight: 600;
+    text-align: center;
   }
 
   form {
@@ -27,7 +30,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     input {
-      margin-bottom: 0.8em;
+      margin: 0.5em 0.8em;
       width: 22em;
       height: 3em;
       border: 1px solid white;
@@ -36,23 +39,97 @@
       box-sizing: border-box;
       padding: 0 0.7em;
       font-weight: 600;
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     }
 
     .blankInputAlert {
-      border: 1px solid gray;
-      color: red;
+      color: rgb(255, 4, 4);
+      animation: blinkingText 1.2s infinite;
+
+      @keyframes blinkingText {
+        0% {
+          color: rgb(255, 4, 4);
+        }
+        49% {
+          color: rgb(255, 4, 4);
+        }
+        60% {
+          color: transparent;
+        }
+        99% {
+          color: transparent;
+        }
+        100% {
+          color: rgb(255, 4, 4);
+        }
+      }
+    }
+    .forget-pass {
+      color: gray;
+      text-decoration: none;
+      text-align: start;
     }
 
-    button {
-      width: 5em;
-      height: 2.5em;
+    button[type="submit"] {
+      margin-top: 0.7em;
+      padding: 0.75rem 1.5rem;
       font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 600;
       color: #fff;
-      border: 0;
+      border: 1px solid white;
       border-radius: 0.5em;
-      background: #16c79a;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      cursor: pointer;
+      background-color: #ff4848;
+      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+      transition: letter-spacing 0.2s ease-in;
+
+      &:hover {
+        letter-spacing: 0.2em;
+      }
+    }
+  }
+
+  .other-signin-heading {
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+  .other-signin-option {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 40px;
+      height: 40px;
+      padding: 0.7em 0.8em;
+      margin: 0 1em;
+      background-color: #eeeeee;
+      border-radius: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  .create-newacc {
+    margin-top: 1em;
+    span {
+      font-size: 1rem;
+      button {
+        font-size: 1.1rem;
+
+        border: 0;
+        text-decoration: underline;
+        color: rgb(14, 67, 211);
+      }
     }
   }
 }

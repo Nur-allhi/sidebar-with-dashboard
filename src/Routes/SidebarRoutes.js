@@ -11,6 +11,7 @@ function SidebarRoutes() {
     return (
 
         <div className="content-container">
+            <div className="content">
             <Switch>
                 <Route exact path="/">
                     <Dashboard />
@@ -30,6 +31,7 @@ function SidebarRoutes() {
                 </Route>
 
             </Switch>
+            </div>
         </div>
 
     )
